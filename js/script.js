@@ -15,18 +15,25 @@ $(document).ready(function () {
     });
 
 
-    $(".search-button").click(function () {
-        if ($(".search").hasClass("search-area")) {
+
+
+    $(".search-button-close").click(function () {
             $(".search").removeClass("search-area");
-            $(".search").slideToggle('slow');
-        } else {
-            $(".search").addClass("search-area");
-            $(".search").slideToggle('slow');
-            $(".search").css("display", "block");
-        }
+            $(".search").slideUp('10');
+            $(".search-button-close").fadeOut(200); 
+            $(".search-button").fadeIn(200); 
     });
 
+    $(".search-button").click(function () {
+        $(".search").addClass("search-area");
+            $(".search").slideDown('10');
+            $(".search-button").hide();
+            $(".search").css("display", "block");
+            $(".search-button-close").fadeIn(200);
 });
+
+
+
 
 
 $(".mobile-search").click(function () {
@@ -40,6 +47,8 @@ $(".mobile-search-close").click(function () {
     $(".mobile-search").fadeIn(200);
     $(".search-mobile").slideToggle('slow');
 })
+
+
 
 
 
@@ -94,14 +103,17 @@ $(".menu-button").click(function(){
 
 var content = $(".lose-weight-text");
 var button = $(".show-more-button");
+var hiddenEl = $(".column-hidden");
 
 button.click(function(){
     if(content.hasClass("open")){
-		content.removeClass('open');
+        content.removeClass('open');
+        hiddenEl.fadeOut();
 		button.text("Rozwij");
 	} else {
         content.addClass('open');
         button.text("Zwij");
+        hiddenEl.fadeIn();
 	}
 });
 
@@ -140,31 +152,44 @@ var swiper = new Swiper('.second-slider', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    slidesPerView: 3,
+    slidesPerView: 4,
+    spaceBetween:10,
+    loopAdditionalSlides: 1,
+    loop:true
 });
 
 var swiper = new Swiper(".plus-images-slider", {
     direction: 'horizontal',
     spaceBetween: 10,
+    autoplay: {
+        delay: 1000
+    },
+    slidesPerView: 1,
+    loopAdditionalSlides: 3
 })
 
 
 var swiper = new Swiper('.second-slider-mobile', {
     autoplay: {
-        delay: 100000
+        delay: 1000
     },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
     slidesPerView: 1,
+    spaceBetween:20,
     width: 228,
+    loop:true,
+    loopAdditionalSlides: 3
 });
 
 
 var swiper = new Swiper('.clients-feedback-content', {
     slidesPerView: 4,
     width:1000,
+    spaceBetween:20,
+    loop:true,
     autoplay: {
         delay: 3000
     },
@@ -172,12 +197,14 @@ var swiper = new Swiper('.clients-feedback-content', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    loopAdditionalSlides: 3
 });
 
 
 var swiper = new Swiper('.clients-feedback-mobile', {
     slidesPerView: 1,
     width: 300,
+    loop:true,
     spaceBetween: 10,
     autoplay: {
         delay: 10000
@@ -186,16 +213,24 @@ var swiper = new Swiper('.clients-feedback-mobile', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    loopAdditionalSlides: 3
 });
 
 
 var swiper = new Swiper('.recipe-slider', {
-    // autoplay: {
-    //     delay: 3000
-    // },
+    autoplay: {
+        delay: 3000
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    slidesPerView: 3,
+    slidesPerView: 1,
+    width: 265,
+    spaceBetween:30,
+    loop:true,
+    loopAdditionalSlides: 3
+});
+
+
 });

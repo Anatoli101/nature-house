@@ -3,6 +3,12 @@
 body{margin:0;padding:0;display:flex;justify-content:center;font-family:'Montserrat',semi-bold;font-size:13px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .nature-house{position:relative;width:100%;overflow-x:hidden}
 
+*{
+    outline: none;
+}
+
+
+.cos {}
 
 /* BACKGROUND VEGETABLES */
 .top-phone{width:300px;top:51px;left:72px;position:absolute;z-index:-3}
@@ -49,10 +55,10 @@ body{margin:0;padding:0;display:flex;justify-content:center;font-family:'Montser
 .numberSize{font-size:30px!important}
 .logo-and-login{width:100%;display:flex;flex-direction:row;justify-content:space-between;margin-top:30px}
 .landl-left{display:flex;flex-direction:row;width:270px;color:#fff;justify-content:space-around;height:inherit;margin-left:15px}
-.landl-left img{height:inherit;cursor:pointer}
+.landl-left a {width: 100% !important;}
 .landl-left h3{font-size:25px;font-family:'Montserrat',semi-bold;text-align:center;display:flex;justify-content:center;align-items:center}
 .landl-right{display:flex;flex-direction:row;color:#fff;justify-content:space-around;align-items:center;border:#FF0002;justify-content:space-between;width:310px;background-color:#0A4E43}
-.landl-right button{text-decoration:none;color:#fff;font-family:'Montserrat',semi-bold;height:38px;border:none;border-radius:30px;padding:12px 18px;letter-spacing:3px;font-weight:530;box-shadow:0 12px 20px #3E3E3E;cursor:pointer}
+.landl-right button{text-decoration:none;color:#fff;font-family:'Montserrat',semi-bold;height:38px;border:none;border-radius:30px;padding:12px 18px;letter-spacing:3px;font-weight:530;box-shadow: 0px 12px 20px 0px rgba(62,62,62,0.42);cursor:pointer}
 .green-button{background-color:#00BD35}
 .red-button{background-color:red!important}
 .menu-fixed{background-color:#fff;width:100%;position:fixed;top:0;right:0;display:flex;justify-content:center;box-shadow:0 5px 30px 0 rgba(0,0,0,0.1);z-index:9999}
@@ -61,9 +67,11 @@ body{margin:0;padding:0;display:flex;justify-content:center;font-family:'Montser
 ul .submenu{padding:20px;display:none;position:absolute;background-color:#fff;width:460px;color:#000;list-style:none;height:100px;border-top:3px solid #00BD35;z-index:5;border-bottom-right-radius:20px;border-bottom-left-radius:20px}
 .submenu li{width:50%;float:left}
 .menu>li:hover>ul.submenu{display:block}
+.desktop-close{position: absolute;top: 0px;left: 0px;ont-size: 25px;  font-weight: 600;}
 .titles-and-slider{display:flex;flex-direction:row;padding-top:40px;justify-content:space-between;max-width:1146px;position:relative}
 .search-button{width:23px;height:23px;background-color:#00BD35;border-radius:50%;position:absolute;right:-60px;top:27px;cursor:pointer}
 .search-button li{position:absolute;left:5px;top:2px;font-size:13px}
+.search-button-close{width:23px;height:23px;border-radius:50%;position:absolute;font-size: 23px;  right:-60px;top:27px;cursor:pointer}
 .search-area{display:block}
 .search-field{width:100%;background-color:#fff;border-radius:16px;display:flex;justify-content:center;padding:30px 0}
 .search-field-block{display:flex;width:80%;justify-content:space-between;align-items:center}
@@ -101,8 +109,8 @@ a{cursor:pointer;text-decoration:none}
 .step-titles .container{display:flex;flex-direction:row;justify-content:space-between;padding-top:80px;top:0}
 .step-title-text1{color:#3B3B45;font-size:19px;font-weight:600}
 .step-title-text2{line-height:23px;font-family:'Montserrat';font-style:italic;color:#3B3B45}
-.step-title-text3 a{color:#00BD35;font-weight:700;text-decoration:none}
-.step-title-text3 i{font-size:20px}
+.step-title-text3 a{color:#00BD35;font-weight:700;text-decoration:none; position: relative;}
+.step-title-text3 i{font-size:20px;position: absolute; top: -2px}
 .plus-images{margin-top:30px;display:flex;margin-top:0}
 .plus-images .container{display:flex;justify-content:center;margin-top:0}
 .plus-images .row{flex-direction:row;justify-content:space-between;width:100%;align-items:center}
@@ -191,10 +199,10 @@ a{cursor:pointer;text-decoration:none}
 .moreLink{color:#00BD35;display:flex;font-weight:700;align-items:center}
 .moreLink i{font-size:25px}
 .products-content{display:flex;flex-direction:row;justify-content:space-between}
-.choose-product{transition: .2s;width:362px;height:100px;background-color:#fff;border-radius:16px;box-shadow:0 5px 30px 0 rgba(0,0,0,0);display:flex;align-items:center;margin: 10px;}
+.choose-product{transition: .6s;width:362px;height:100px;background-color:#fff;border-radius:16px;box-shadow:0 5px 30px 0 rgba(0,0,0,0);display:flex;align-items:center;margin: 10px;}
 .choose-product i{font-size:50px;margin:0 20px;color:#00BD35;font-weight:600}
 .choose-product p{font-weight:600;font-size:16px;color:#3B3B45}
-.choose-product:hover{transform: scale(1.1)}
+.choose-product:hover{transform: scale(1.05)}
 
 .recipe-line{display:flex;flex-direction:row;justify-content:space-between;align-items:center}
 .recipe-line .control{display:flex;align-items:center;height:100%;width:30%;font-weight:600}
@@ -273,7 +281,7 @@ a{cursor:pointer;text-decoration:none}
 .lose-weight-text{width:100%;height:360px;justify-content:space-between;column-count:3;column-gap:40px}
 .column-article{width:364px;color:#646464;line-height:32px;margin:0}
 /* .news-and-footer{height:154px;position:relative; background: url(/img/bg_waves/wave_green_up.svg)} */
-.newsteller{height: 218px ; position:relative;    bottom: -4px;background-color:#0A4E43;background:url(/img/bg_waves/wave_green_up.svg);background-repeat:no-repeat;background-size:103%;background-position:bottom}
+.newsteller{height: 340px;position: relative;bottom: -4px; right: 0;background-color: #0A4E43; background: url(/img/bg_waves/wave_green_up.svg); background-repeat: no-repeat;background-position: top right;background-size: cover;}
 .main-mobile-block{display:flex;flex-direction:row;height:100%;width:72%}
 .main-mobile-block div{padding-right: 30px;}
 .newsteller-inside{width:100%;height:140px;border-radius:16px;background-color:#fff;display:flex;flex-direction:row;justify-content:center;align-items:center;box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.1);}
@@ -291,16 +299,16 @@ a{cursor:pointer;text-decoration:none}
 .checkmark:after{content:"";position:absolute;display:none}
 .check-place input:checked~.checkmark:after{display:block}
 .check-place .checkmark:after{left:4px;top:2px;width:2px;height:5px;border:solid #fff;border-width:0 2px 2px 0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
-.newsteller-button{background-color:#00BD35;letter-spacing:2px;padding:12px 18px;border:none;color:#fff;border-radius:100px;font-family:'Montserrat';font-weight:600;height:38px;box-shadow:0 12px 20px 0 rgba(0,189,53,1);cursor:pointer}
+.newsteller-button{background-color:#00BD35;letter-spacing:2px;padding:12px 18px;border:none;color:#fff;border-radius:100px;font-family:'Montserrat';font-weight:600;height:38px;box-shadow:0 12px 20px 0 rgba(0,189,53,0.5);cursor:pointer}
 /* .background-carrot{position:absolute;right:40px;top:54px;z-index:0} */
 .footer{background-color:#0A4E43;height:425px;display:flex;justify-content:space-between}
-.footer .container{align-items:center}
+.footer .container{align-items:center;width: 100%;justify-content: space-between;display: flex;}
 .footer-links{width:calc(100%/3);display:flex;flex-direction:column}
 .footer-main{color:#00BD35;font-size:19px;font-weight:600;margin-bottom:30px}
 .footer-content{height:169px;display:flex;flex-direction:column;justify-content:space-between}
 .footer-content a,.footer-content-text{color:#fff;font-size:16px;font-weight:600;margin:0}
 .footer-content .text{height:126px!important}
-.footer-number{color:#fff;font-size:30px;font-weight:600}
+    .footer-number{color:#fff;font-size:30px;font-weight:600; margin: 0;}
 .number-and-links{height:169px;display:flex;justify-content:space-between;flex-direction:column}
 .swiper-button-prev,.swiper-button-next,{background-size:15px 44px}
 .animated{animation-delay:.1s}
@@ -350,7 +358,7 @@ a{cursor:pointer;text-decoration:none}
 .mobile-search{padding:7px 9px;background-color:#00BD35;border-radius:50%;cursor:pointer;color:#fff;transition:.9s}
 .mobile-search-close{font-size:30px;padding:0;border-radius:50%;cursor:pointer;color:#fff;background-color:red;transition:.9s}
 .search-button-mobile{padding:7px 9px;background-color:#00BD35;border-radius:50%;cursor:pointer;color:#fff}
-.burger-menu{display:none;width:83%;height:500px;background-color:#fff;position:fixed;z-index:10}
+.burger-menu{display:none;width:83%;height:550px;background-color:#fff;position:fixed;z-index:10}
 .burger-content{padding:20px}
 .menu-button{width:45px;height:45px;background-color:#fff;border-radius:50%;box-shadow:#fff 0 8px 10px;cursor:pointer;position:relative}
 .mobile-menu-top{display:flex;flex-direction:row;justify-content:space-between}
@@ -425,7 +433,7 @@ a{cursor:pointer;text-decoration:none}
 .product-off{display:none}
 .recipe-line .control{width:50%}
 .slider-buttons-control{display:none}
-.recipe-photos .recipe-card{width:265px!important;margin-right:28px;height:238px}
+.recipe-photos .recipe-card{height:238px}
 .vegetable2{display:none}
 .block-links{justify-content:flex-start}
 .block-card{padding:10px;width:290px}
@@ -446,7 +454,7 @@ a{cursor:pointer;text-decoration:none}
 .paprica-img img{width:300px}
 .lose-weight-text{columns:2;height:100%}
 .column-article{width:100%}
-.newsteller{z-index:3}
+.newsteller{z-index:3;height: auto;}
 .newsteller-inside{align-items:center;justify-content:space-between}
 .newsteller-block-mobile{align-items:center;display:flex;justify-content:space-around;height:40%}
 .main-mobile-block{display:flex;flex-direction:column;height:100%;width:65%}
@@ -518,7 +526,7 @@ a{cursor:pointer;text-decoration:none}
 .kuration .moreInfo{display:flex!important;align-items:center}
 .rodzaje-kuracji{width:85%}
 .kuration-leaf{top:259px;width:390px}
-.leaf-cabbage{bottom:-100px;right:-177px}
+.leaf-cabbage{bottom:-150px;right:-177px}
 .kuration-types{padding-top:20px}
 .kuration-types-content{padding-top:0}
 .free-consultation{flex-direction:column}
@@ -532,7 +540,7 @@ a{cursor:pointer;text-decoration:none}
 .block-line .block-line-start{width:78%}
 .magazine-faq{flex-wrap:wrap}
 .magazine{height: 300px;width: 100%;}
-.faq{width: 100%;height: 300px;}
+.faq{width: 100%;height: auto;}
 .magazine-img{height:54vw}
 .forum-inline{height:180px}
 .paprica-img img{width:152px;top:43px;position:absolute;right:-21px}
@@ -544,9 +552,9 @@ a{cursor:pointer;text-decoration:none}
 .forum-naturhouse{padding-top:20px}
 .lose-weight{padding-top:35px}
 .news-and-footer{height:110px}
-.newsteller-inside{height:300px;display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start}
+.newsteller-inside{height:auto;display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start}
 .newsteller-text{padding-right:20px}
-.lose-weight-text{height:400px;columns:1;padding:0}
+.lose-weight-text{height:auto;columns:1;padding:0}
 .show-more-button{color:#00BD35;font-weight:600;font-size:15px;position:relative}
 .icon-a-down:before{content:"\e908";font-size:31px;position:absolute;top:-4px}
 .open{height:100%;transition:.9s ease}
@@ -563,7 +571,10 @@ a{cursor:pointer;text-decoration:none}
 .consultation-form .content img{ width: 180px;} 
 .newsteller-text-mob{flex-direction: column;}
 .faq{justify-content: start; }
+.search-field-block{width: 100%; justify-content: space-around; }
+.find-it-input{width: 200px;}
 
+.column-hidden{display: none;};
 }
 
 @media (max-width: 1199px) and (min-width: 990px){
@@ -590,3 +601,7 @@ a{cursor:pointer;text-decoration:none}
 .paprica-img img{max-width: 100%}
 
 }
+
+
+
+

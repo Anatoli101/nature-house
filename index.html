@@ -21,7 +21,6 @@
 <body>
 
     <div class="nature-house">
-        <!-- DOROBIC MENU -->
         <div class="burger-menu">
             <div class="burger-content">
                 <div class="mobile-menu-top">
@@ -84,7 +83,7 @@
                 </div>
                 <div class="logo-and-login">
                     <div class="landl-left">
-                        <img src="img/logo.svg" alt="logo">
+                        <a href="#" id="logo-link"><img src="img/logo.svg" alt="logo"></a>
                     </div>
                     <div class="landl-right">
                         <button href="#" class="green-button"> ZALOGUJ</button>
@@ -153,6 +152,16 @@
                             <li><span class="fas fa-search">
                                 </span></li>
                         </div>
+                        
+                        <div class="search-button-close" style="background-color:red; display: none;">
+                            <li><span class="icon-close desktop-close">
+                                </span></li>
+                        </div>
+                        
+
+                
+
+
                     </ul>
                 </div>
                 <div class="search" style="display:none">
@@ -1190,34 +1199,43 @@
                     <div class="block-content">
                         <div class="block-content-left">
                             <div class="content-left-main">
-                                <img src="/img/demo_img/blog/b1_big.png" alt="">
-                                <div class="block-title">
-                                    <div class="block-text-stars">
-                                        <p class="main-big-text">Tempo odchudzania - od czego zależy? </p>
-                                        <p class="main-small-text">Szybkie odchudzanie to pokusa, która wiele osób
-                                            sprowadziła…</p>
+                                <a href="">
+                                    <img src="/img/demo_img/blog/b1_big.png" alt="">
+                                    <div class="block-title">
+                                        <div class="block-text-stars">
+                                            <p class="main-big-text">Tempo odchudzania - od czego zależy? </p>
+                                            <p class="main-small-text">Szybkie odchudzanie to pokusa, która wiele osób
+                                                sprowadziła…</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="short-articles">
-                                <div class="block-article"> <img src="/img/demo_img/blog/b2.jpg" alt="">
-                                    <p class="block-advice">14 dni oczyszczania – spróbuj!</p>
+
+                                <div class="block-article">
+                                    <img src="/img/demo_img/blog/b2.jpg" alt="">
+                                    <a class="block-advice">14 dni oczyszczania – spróbuj!</a>
                                     <a href="" class="block-category">#aktualnosc</a>
                                 </div>
-                                <div class="block-article"> <img src="/img/demo_img/blog/b2.jpg" alt="">
-                                    <p class="block-advice">14 dni oczyszczania – spróbuj!</p>
+
+                                <div class="block-article">
+                                    <img src="/img/demo_img/blog/b2.jpg" alt="">
+                                    <a class="block-advice">14 dni oczyszczania – spróbuj!</a>
                                     <a href="" class="block-category">#aktualnosc</a>
                                 </div>
-                                <div class="block-article"> <img src="/img/demo_img/blog/b2.jpg" alt="">
-                                    <p class="block-advice">14 dni oczyszczania – spróbuj!</p>
+                                <div class="block-article">
+                                    <img src="/img/demo_img/blog/b2.jpg" alt="">
+                                    <a class="block-advice">14 dni oczyszczania – spróbuj!</a>
                                     <a href="" class="block-category">#aktualnosc</a>
                                 </div>
-                                <div class="block-article"> <img src="/img/demo_img/blog/b2.jpg" alt="">
-                                    <p class="block-advice">14 dni oczyszczania – spróbuj!</p>
+                                <div class="block-article">
+                                    <img src="/img/demo_img/blog/b2.jpg" alt="">
+                                    <a class="block-advice">14 dni oczyszczania – spróbuj!</a>
                                     <a href="" class="block-category">#aktualnosc</a>
                                 </div>
-                                <div class="block-article"> <img src="/img/demo_img/blog/b2.jpg" alt="">
-                                    <p class="block-advice">14 dni oczyszczania – spróbuj!</p>
+                                <div class="block-article">
+                                    <img src="/img/demo_img/blog/b2.jpg" alt="">
+                                    <a class="block-advice">14 dni oczyszczania – spróbuj!</a>
                                     <a href="" class="block-category">#aktualnosc</a>
                                 </div>
 
@@ -1226,7 +1244,7 @@
 
                         <div class="block-content-right">
                             <div class="block-card">
-                                <div class="block-card-img"></div>
+                                 <a class="block-card-img"></a>
                                 <div class="block-right-topic">
                                     <div class="topic">
                                         <a href="" class="block-category">#aktualnosc</a>
@@ -1237,7 +1255,7 @@
                                 </div>
                             </div>
                             <div class="block-card">
-                                <div class="block-card-img"></div>
+                                <a class="block-card-img"></a>
                                 <div class="block-right-topic">
                                     <div class="topic">
                                         <a href="" class="block-category">#aktualnosc</a>
@@ -1248,7 +1266,7 @@
                                 </div>
                             </div>
                             <div class="block-card">
-                                <div class="block-card-img"></div>
+                                <a class="block-card-img"></a>
                                 <div class="block-right-topic">
                                     <div class="topic">
                                         <a href="" class="block-category">#aktualnosc</a>
@@ -1351,7 +1369,8 @@
                             naszym prawie trzydziestoletnim doświadczeniu i wiedzy. Istotnym elementem - po etapie
                             redukcji - jest stabilizacja wagi, dzięki której nasi klienci utrzymujący nowe, zdrowe
                             nawyki żywieniowe nie doświadczają efektu jo-jo.</p>
-                        <p class="column-article">Warto wiedzieć, że w Naturhouse nie ograniczamy się jedynie do tematu
+                        <p class="column-article column-hidden">Warto wiedzieć, że w Naturhouse nie ograniczamy się
+                            jedynie do tematu
                             odchudzania, lecz stawiamy na naukę zdrowych nawyków żywieniowych. Dobieramy plany
                             żywieniowe odpowiadające na indywidualne potrzeby organizmu, m.in dieta na przytycie, diety
                             odchudzające u osób ćwiczących, diety oczyszczające organizm, wspomagające redukcję obwodów
@@ -1398,10 +1417,10 @@
 
                 <div class="newsteller-inside-content">
                     <div class="newsteller-text-mob">
-                    <p class="newsteller-name">Newsteller</p>
-                    <p class="newsteller-call">Zapisz się do naszego newslettera i bądź zawsze na
-                        </div>
-                        <div class="mail-checkplace">
+                        <p class="newsteller-name">Newsteller</p>
+                        <p class="newsteller-call">Zapisz się do naszego newslettera i bądź zawsze na
+                    </div>
+                    <div class="mail-checkplace">
                         <p class="adress">Adres e-mail</p>
                         <div class="newsteller-mail">
 
@@ -1412,7 +1431,7 @@
                             </label>
                         </div>
                     </div>
-                        <button href="" class="newsteller-button">ZAPISZ SIĘ</button>
+                    <button href="" class="newsteller-button">ZAPISZ SIĘ</button>
                 </div>
             </div>
         </div>
@@ -1440,7 +1459,7 @@
                 <div class="footer-links ">
                     <p class="footer-main">Infolinia </p>
                     <div class="number-and-links">
-                        <a class="footer-number"> 801 11 12 13</a>
+                        <p class="footer-number"> 801 11 12 13</p>
                         <p class="footer-main">Sociale </p>
                         <div class="social-networks-icons">
                             <div class="ins-icon"><a href="" class="social-network-color"></a><i class="fab fa-instagram"></i></a></div>
